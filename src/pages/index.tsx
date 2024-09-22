@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Box, Text, Button, VStack, Image, Stack } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,10 @@ export default function Home() {
         justifyContent="center"
         alignItems="center"
         height="100vh"
-        bgGradient="linear(to-r, gray.800, black)"
+        // bgGradient="linear(to-r, gray.800, black)"
         className={inter.className}
       >
+        <ParticleBackground/>
         <VStack spacing={8}>
           {/* Kremara Title */}
           <Text fontSize="5xl" color="gray.200" fontWeight="bold" mt={8}>
